@@ -1,0 +1,220 @@
+*{
+    caret-color: transparent;
+}
+*::selection{
+    background-color: white;
+}
+
+nav{
+    height: 40px;
+}
+.navd{
+    width: 60%;
+}
+.navdrop{
+    position: relative;
+}
+.navdrop ul{
+    position: absolute;
+    background-color: #f6f6f6;
+    width: 175px;
+    right: -5px;
+    top: 30px;
+    display: none;
+}
+.navdrop ul::before{
+    content: "";
+    border-color: transparent transparent #f6f6f6 transparent;
+    border-style: solid;
+    border-width: 16px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    right: 0px;
+    top: -32px;
+}
+.navdrop ul li{
+    border-bottom: rgb(0, 0, 0 ,.3) 1px solid;
+}
+.navi:hover{
+    font-size: 1.7rem!important;
+}
+.navi:hover + .navu{
+    display: block;
+}
+.navu:hover{
+    display: block;
+}
+.navu a:hover{
+    transform: translate(10px);
+    -webkit-transform: translate(10px);
+    -moz-transform: translate(10px);
+    -ms-transform: translate(10px);
+    -o-transform: translate(10px);
+    transition-duration: .5s;
+}
+.lcontainer{
+    width: 280px;
+}
+.landing{
+    height: calc(100vh - 88px);
+    width: 100%;
+    background-image:url(landing.jpg);
+    background-size: cover;
+}
+.lp1{
+    color: #10cab7;
+    font-size: 50px;
+}
+.msfeatures,
+.msport{
+    background-color: #f6f6f6;
+}
+div[class^="ms"]{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.msfeatures div[class ^= "d"]{
+    padding: 20px;
+}
+.msfeatures div[class ^= "d"] svg{
+    font-size: 53px;
+    padding-bottom: 20px;
+}
+.fp2 {
+font-size: 17px;
+line-height: 28px;
+}
+.secpcon .mp{
+    font-size: 100px;
+    color: #ebeced;
+    margin: 0px;
+    letter-spacing: -4px;
+}
+.secpcon .sp{
+    margin: -45px 0 0 0;
+    font-size: 18px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0 ,.7);
+}
+.secsercon{
+    margin-top: 100px!important;
+}
+.graphic{
+    position: relative;
+}
+.graphic::before{
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    content: "\f53f";
+    position: absolute;
+    left: -60px;
+    top: -14px;
+    color: #10cab7;
+    font-size:35px;
+}
+.uiux{
+    position: relative;
+}
+.uiux::before{
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    content: "\f3a5";
+    position: absolute;
+    left: -60px;
+    top: -14px;
+    color: #10cab7;
+    font-size:35px;
+}
+.vector{
+    position: relative;
+}
+.vector::before{
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    content: "\f5cb";
+    position: absolute;
+    left: -60px;
+    top: -14px;
+    color: #10cab7;
+    font-size:35px;
+}
+.uiux{
+    position: relative;
+}
+.uiux::before{
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    content: "\f3a5";
+    position: absolute;
+    left: -60px;
+    top: -14px;
+    color: #10cab7;
+    font-size:35px;
+}
+.pen{
+    position: relative;
+}
+.pen::before{
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    content: "\f5ae";
+    position: absolute;
+    left: -60px;
+    top: -14px;
+    color: #10cab7;
+    font-size:35px;
+}
+.serviceimg{
+    height: 348px;
+    width: 293.81px;
+    z-index: 100;
+    position: relative;
+}
+
+.serimage{
+    position: relative;
+    height: 348px!important;
+    width: 293.81px!important;
+    padding-right: 0px!important;
+}
+
+.serimage::after{
+    content: "";
+    background-color: #2c4755;
+    height: 400px;
+    width: 25%;
+    position: absolute;
+    right: -12.5%;
+    top: -26px;
+}
+.pcon .row{
+    margin-top:100px ;
+}
+.msport div[class ^= "d"] img{
+    margin-bottom: 20px;
+    width: calc(100% + 24px);
+    transform: translateX(-12px);
+    -webkit-transform: translateX(-12px);
+    -moz-transform: translateX(-12px);
+    -ms-transform: translateX(-12px);
+    -o-transform: translateX(-12px);
+}
+@media (max-width: 992px){
+    .serimage{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    .sersec::before{
+        left: 20px;;
+    }
+    
+}
+@media (min-width: 992px) {
+    .msport div[class ^= "d"]{
+    flex: 0 0 auto;
+    width: 30%;
+    }
+}

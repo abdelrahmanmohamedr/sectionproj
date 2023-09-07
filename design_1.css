@@ -192,6 +192,9 @@ line-height: 28px;
 .pcon .row{
     margin-top:100px ;
 }
+.pccon .row{
+    margin-top:60px ;
+}
 .msport div[class ^= "d"] img{
     margin-bottom: 20px;
     width: calc(100% + 24px);
@@ -201,14 +204,88 @@ line-height: 28px;
     -ms-transform: translateX(-12px);
     -o-transform: translateX(-12px);
 }
+hr{
+    border: #20645d solid 2px!important;
+}
+.aboutimg{
+height: 340px;
+width: 100%;
+z-index: 100;
+position: relative;
+}
+.imgcon{
+    position: relative;
+    padding: 0px;
+    z-index: 100;
+}
+.imgcon::before{
+    content: "";
+    background-color: #ebeced;
+    height: 400px;
+    width: 35%;
+    position: absolute;
+    left: -11.5%;
+    top: -30px;
+}
+.imgcon::after{
+    content: "";
+    height: 340px;
+    width: 143px;
+    position: absolute;
+    right: -104px;
+    top: -30px;
+    border-bottom: #10cab7 80px solid;
+    border-left: #10cab7 80px solid;
+}
+.mscontact{
+    background-color:#f6f6f6 ;
+}
+.pcon1{
+    color: #2c4755;
+    letter-spacing: -2px;
+    margin: 0px;
+}
+.pcon2{
+    color: #10cab7;
+    letter-spacing: -2px;
+    text-decoration: none;
+    margin: 0px;
+}
+.pcon2{
+    letter-spacing: -2px;
+}
+footer{
+    background-color: #2c4755;
+}
+footer p{
+    color: white;
+}
+footer span{
+    color: #10cab7;
+}
 @media (max-width: 992px){
     .serimage{
         display: none;
     }
+    .imgcon::before{
+        display: none;
+    }
+    .imgcon::after{
+        display: none;
+    }
+    .aboutimg{
+        height: 100%;
+        }
 }
 @media (max-width: 768px){
     .sersec::before{
         left: 20px;;
+    }
+    .imgcon::before{
+        display: none;
+    }
+    .imgcon::after{
+        display: none;
     }
     
 }
